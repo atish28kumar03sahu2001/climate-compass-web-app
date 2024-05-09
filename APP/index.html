@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Weather & Air Quality App</title>
+</head>
+<body>
+    <div class="IP-DIV">
+        <div class="IP-DIV1">
+            <input type="text" placeholder="Location Name" name="location" id="location" class="IP">
+            <button class="SBTN" id="SUBMIT">
+                <i class="fa-solid fa-magnifying-glass fa-sm" style="color: #ffffff;"></i>
+            </button>
+        </div>
+    </div>
+    <div class="WEDD1">
+        <div class="TEMPD">
+            <p class="TEMPP">Temperature</p>
+            <div class="TMEPIMG">
+                <div class="TEMP1" title="Temperature">
+                    <p style="text-align: center; margin: 20px;">Temp</p>
+                    <i class="fa-solid fa-temperature-half fa-2xl" style="color: #ffffff;"></i>
+                    <p class="P" id="temperature">0° C</p>
+                </div>
+                <div class="TEMP2" title="Min-Temperature">
+                    <p style="text-align: center; margin: 20px;">Min-Temp</p>
+                    <i class="fa-solid fa-temperature-quarter fa-2xl" style="color: #ffffff;"></i>
+                    <p class="P" id="mintemperature">0° C</p>
+                </div>
+                <div class="TEMP3" title="Max-Temperature">
+                    <p style="text-align: center; margin: 20px;">Max-Temp</p>
+                    <i class="fa-solid fa-temperature-full fa-2xl" style="color: #ffffff;"></i>
+                    <p class="P" id="maxtemperature">0° C</p>
+                </div>
+            </div>
+        </div>
+        <div class="TEMPD">
+            <p class="TEMPP">Wind Data & Humidity</p>
+            <div class="TMEPIMG">
+                <div class="TEMP1" title="Wind Speed">
+                    <p style="text-align: center; margin: 20px;">Speed</p>
+                    <i class="fa-solid fa-tornado fa-2xl" style="color: #ffffff;"></i>
+                    <p class="P" id="windspeed">0 km/h</p>
+                </div>
+                <div class="TEMP1" title="Wind Degree">
+                    <p style="text-align: center; margin: 20px;">Degree</p>
+                    <i class="fa-solid fa-wind fa-2xl" style="color: #ffffff;"></i>
+                    <p class="P" id="winddegree">0°</p>
+                </div>
+                <div class="TEMP1" title="Humidity">
+                    <p style="text-align: center; margin: 20px;">Humidity</p>
+                    <i class="fa-solid fa-droplet fa-2xl" style="color: #ffffff;"></i>
+                    <p class="P" id="humidity">0%</p>
+                </div>
+            </div>
+        </div>
+        <div class="TEMPD">
+            <p class="TEMPP">Other Data </p>
+            <div class="TMEPIMG">
+                <div class="TEMP1" title="Sun Rise">
+                    <p style="text-align: center; margin: 20px;">Sun Rise</p>
+                    <i class="fa-solid fa-sun fa-2xl" style="color: #ffffff;"></i>
+                    <p class="P" id="sunrise">0 AM</p>
+                </div>
+                <div class="TEMP1" title="Moon Rise">
+                    <p style="text-align: center; margin: 20px;">Moon Rise</p>
+                    <i class="fa-solid fa-moon fa-2xl" style="color: #ffffff;"></i>
+                    <p class="P" id="moonrise">0 PM</p>
+                </div>
+                <div class="TEMP1" title="Feels Like">
+                    <p style="text-align: center; margin: 20px;">Feel Like</p>
+                    <i class="fa-solid fa-temperature-high fa-2xl" style="color: #ffffff;"></i>
+                    <p class="P" id="feelslike">0° C</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

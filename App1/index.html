@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Style File -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Weather & Air Quality App</title>
+</head>
+<body>
+    <div class="IP-DIV">
+        <div class="IP-DIV1">
+            <input type="text" placeholder="Location Name" name="location" id="location" class="IP">
+            <button class="SBTN" id="SUBMIT">
+                <i class="fa-solid fa-magnifying-glass fa-sm" style="color: #ffffff;"></i>
+            </button>
+        </div>
+    </div>
+    <div class="Data-Div1" style="display: block; margin: 0 auto;">
+        <h2 class="h2" id="AAQI" style="text-align: center;">0 (AQI)</h2>
+    </div>
+    <div class="Data-Div">
+        <div class="DDBOX">
+            <h2 class="h2">PM2.5 (µg/m³)</h2>
+            <h3 class="h3" id="PM25V">0 µg/m³</h3>
+            <h4 class="h4" id="PM25AQI">0 (AQI)</h4>
+        </div>
+        <div class="DDBOX">
+            <h2 class="h2">PM10 (µg/m³)</h2>
+            <h3 class="h3" id="PM10V">0 µg/m³</h3>
+            <h4 class="h4" id="PM10AQI">0 (AQI)</h4>
+        </div>
+        <div class="DDBOX">
+            <h2 class="h2">O3 (ppb)</h2>
+            <h3 class="h3" id="O3V">0 ppb</h3>
+            <h4 class="h4" id="O3AQI">0 (AQI)</h4>
+        </div>
+        <div class="DDBOX">
+            <h2 class="h2">NO2 (ppb)</h2>
+            <h3 class="h3" id="NO2V">0 ppb</h3>
+            <h4 class="h4" id="NO2AQI">0 (AQI)</h4>
+        </div>
+        <div class="DDBOX">
+            <h2 class="h2">SO2 (ppb)</h2>
+            <h3 class="h3" id="SO2V">0 ppb</h3>
+            <h4 class="h4" id="SO2AQI">0 (AQI)</h4>
+        </div>
+        <div class="DDBOX">
+            <h2 class="h2">CO (ppm)</h2>
+            <h3 class="h3" id="COV">0 ppm</h3>
+            <h4 class="h4" id="COAQI">0 (AQI)</h4>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
