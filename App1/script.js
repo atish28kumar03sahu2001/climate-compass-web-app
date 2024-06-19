@@ -4,14 +4,12 @@ SBTN.addEventListener("click",()=>{
     GetAQI(location);
 })
 let GetAQI = async (location) => {
-    let API_KEY = "mdGL3YgWQ3rkuO/mVf9mkg==wDzGqQL0RNpkAsoi";
+    let API_KEY = "Usd4M7zuzRkf7YBVifJFdQ==StrOB8wfcDp3w060";
 
     return fetch(`https://api.api-ninjas.com/v1/airquality?city=${location}`,{
         method: 'GET',
-        headers : {
-            'X-Api-Key': `${API_KEY}`,
-            'Content-Type': 'application/json'
-        }
+        headers : {'X-Api-Key': `${API_KEY}`,},
+        contentType: 'application/json',
     })
     .then(res => {
         if(!res.ok) {
